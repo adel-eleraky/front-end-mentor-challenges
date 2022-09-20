@@ -1,0 +1,132 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Karla', sans-serif;
+    background-color: hsl(204, 43%, 93%);
+}
+
+.card {
+    display: grid;
+    grid-template-columns: auto  auto;
+    grid-template-rows: auto auto;
+    margin: 100px auto;
+    width: 800px;
+    height: 500px;
+    border-radius: 10px;
+}
+
+.child-1 {
+    background-color: white;
+    grid-area: 1 / 1 / span 1 / span 2;
+    border-radius: 10px 10px 0 0;
+    padding: 30px;
+}
+
+.child-1 h2 {
+    color: hsl(179deg 75% 44%);
+    margin-bottom: 15px;
+}
+
+.child-1 h3 {
+    color: hsl(71, 73%, 54%);
+    margin-bottom: 15px;
+    padding: 20px 0 0 0;
+}
+
+.child-1 p {
+    padding: 20px 0 0 0;
+    opacity: .6;
+    width: 77%;
+    line-height: 1.7;
+}
+
+.child-2 {
+    background-color: hsl(179, 62%, 43%);
+    grid-area: 2 / 1 / span 1 / span 1;
+    border-radius: 0 0 0 10px;
+    color: white;
+    padding: 30px;
+}
+
+.child-2 h2 {
+    margin-bottom: 20px;
+}
+
+.child-2 .price {
+    margin-bottom: 20px;
+    display: flex;
+}
+
+.price span:first-of-type {
+    margin-right: 10px;
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.price span:nth-of-type(2) {
+    opacity: .6;
+    line-height: 2;
+}
+
+.child-2 p {
+    margin-bottom: 20px;
+}
+
+.child-2 button {
+    width: 82%;
+    height: 45px;
+    margin: 0 0 0 23px;
+    background-color: hsl(71, 73%, 54%);
+    border-style: none;
+    border-radius: 6px;
+    color: white;
+    font-weight: 700;
+    font-size: 16px;
+    box-shadow: 0 2px 8px 0px #868080;
+    cursor: pointer;
+}
+
+.child-3 {
+    background-color: hsl(179, 62%, 43% , .6);
+    grid-area: 2 / 2 / span 1 / span 1;
+    border-radius: 0 0 10px 0;
+    padding: 30px;
+}
+
+.child-3 h2 {
+    color: white;
+    margin-bottom: 20px;
+}
+
+.child-3 p {
+    color: white;
+    opacity: .7;
+    width: 210px;
+    line-height: 1.3;
+}
+
+@media (max-width: 376px) {
+    .card {
+        width: 360px;
+        height: fit-content;
+        grid-template-columns: 1fr;
+        grid-template-rows: 310px 250px 250px;
+        margin: 50px auto;
+    }
+    .child-1 {
+        grid-area: 1 / 1 / span 1 / span 1;
+    }
+    .child-2 {
+        grid-area: 2 / 1 / span 1 / span 1;
+    }
+    .child-3 {
+        grid-area: 3 / 1 / span 1 /  span 1 ;
+    }
+    .child-1 p {
+        width: 100%;
+    }
+}
