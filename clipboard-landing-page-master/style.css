@@ -1,0 +1,322 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Bai Jamjuree', sans-serif;
+    font-size: 18px;
+
+}
+
+/* start main-heading  */
+
+.main-heading {
+    background-image: url(images/bg-header-desktop.png);
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    margin-bottom: 100px;
+}
+
+.main-heading svg {
+    margin: 80px 0 30px 0;
+}
+
+.main-heading h2 {
+    width: 40%;
+    margin: 0 auto 10px;
+    font-size: 34px;
+}
+
+.main-heading p {
+    width: 40%;
+    margin: 0 auto 30px;
+    opacity: .6;
+}
+
+.main-heading button {
+    height: 36px;
+    width: 165px;
+    border-radius: 20px;
+    border-style: none;
+    color: white;
+    font-size: 14px;
+    margin-right: 10px;
+    cursor: pointer;
+} 
+
+
+.main-heading button:first-of-type {
+    background-color: hsl(171, 66%, 44%);
+    box-shadow: 0 4px 7px 0px hsl(171deg 66% 44%);
+}
+
+.main-heading button:nth-of-type(2) {
+    background-color: hsl(233, 100%, 69%);
+    box-shadow: 0 4px 7px 0px hsl(233, 100%, 69%);
+}
+
+
+/* end main-heading  */
+
+
+/* start second-heading  */
+
+.second-heading {
+    text-align: center;
+}
+
+.second-heading h2 {
+    width: 40%;
+    margin: 0 auto 20px;
+}
+
+.second-heading p {
+    width: 50%;
+    margin: 0 auto 50px;
+    opacity: .6;
+}
+
+/* end second-heading  */
+
+/* start pros  */
+
+.pros img {
+    float: left;
+    margin: 0 70px 0 -30px;
+}
+
+.pros .content {
+    display: flex;
+    flex-direction: column;
+    height: 400px;
+    width: 30%;
+    justify-content: space-evenly;
+}
+
+.pros .content p {
+    opacity: .6;
+    margin-top: 5px;
+}
+
+.clear {
+    clear: both;
+}
+
+/* end pros  */
+/* start clipboard  */
+
+.clipboard {
+    margin-top: 100px;
+    text-align: center;
+}
+
+.clipboard h2 {
+    margin-bottom: 15px;
+}
+
+.clipboard p{
+    opacity: .6;
+    width: 40%;
+    margin: 0 auto 50px ;
+    
+}
+
+/* end clipboard  */
+
+/* start workflow  */
+.workflow {
+    width: 90%;
+    height: 270px;
+    margin: 0 auto 120px;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: space-between;
+    align-content: space-between;
+}
+
+.workflow div:nth-child(1) {
+    flex-basis: 100%;
+}
+
+.workflow div:nth-child(n+2) {
+    flex-basis: calc(94% / 3);
+}
+
+.workflow div svg {
+    margin-bottom: 10px;
+}
+
+.workflow div h2 {
+    margin-bottom: 5px;
+}
+
+.workflow div p {
+    opacity: .6;
+}
+/* end workflow  */
+
+
+/* start company-icons */
+
+.company-icons {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 0 auto 100px 0;
+}
+
+/* end company-icons */
+
+
+/* start foot-heading */
+
+.foot-heading {
+    text-align: center;
+    margin-bottom: 150px;
+}
+
+.foot-heading h2 {
+    margin-bottom: 15px;
+}
+
+.foot-heading p {
+    width: 50%;
+    margin: 0 auto 25px;
+}
+
+.foot-heading button {
+    height: 36px;
+    width: 165px;
+    border-radius: 20px;
+    border-style: none;
+    color: white;
+    font-size: 14px;
+    margin-right: 10px;
+    cursor: pointer;
+} 
+
+.foot-heading button:first-of-type {
+    background-color: hsl(171, 66%, 44%);
+    box-shadow: 0 4px 7px 0px hsl(171deg 66% 44%);
+}
+
+.foot-heading button:nth-of-type(2) {
+    background-color: hsl(233, 100%, 69%);
+    box-shadow: 0 4px 7px 0px hsl(233, 100%, 69%);
+}
+
+/* end foot-heading */
+/* start footer */
+
+.footer {
+    background-color: hsl(231deg 68% 71%);
+    display: flex;
+    justify-content: space-around;
+    padding: 50px 0;
+}
+
+
+.footer img {
+    width: 60px;
+}
+
+.footer div a {
+    text-decoration: none;
+    color: black;
+}
+
+.footer div a:hover {
+    color: hsl(171, 66%, 44%);
+}
+
+.footer .icons svg {
+    margin-right: 10px;
+}
+
+.footer .icons a:hover {
+    color: hsl(171, 66%, 44%);
+    
+}
+
+/* end footer */
+
+/* media-query for mobile ( 376px ) */
+
+@media (max-width: 376px) {
+    .main-heading h2 {
+        width: 95%;
+    }
+    .main-heading p {
+        width: 92%;
+    }
+    .main-heading button {
+        display: block;
+        margin: 0 auto 20px;
+        width: 260px;
+    }
+    .second-heading h2 {
+        width: 80%;
+    }
+    .second-heading p {
+        width: 90%;
+    }
+    .pros img {
+        width: 300px;
+        height: 250px;
+        margin: 0 35px 80px;
+    }
+    .pros .content {
+        width: 90%;
+        margin: 0 auto;
+        text-align: center;
+    }
+    .clipboard {
+        margin-bottom: 60px;
+    }
+    .clipboard h2,
+    .clipboard p,
+    .clipboard img {
+        width: 90%;
+    }
+    .workflow {
+        flex-direction: column;
+        height: 800px;
+    }
+    .workflow div:nth-child(n+2),
+    .workflow div:nth-child(1)   {
+        flex-basis: calc(90% / 4);
+    }
+    .company-icons {
+        flex-direction: column;
+        width: 200px;
+        margin: 0 auto 200px;
+        height: 900px;
+    }
+    .foot-heading h2 {
+        width: 80%;
+        margin: 0 auto 30px;
+    }
+    .foot-heading p {
+        width: 80%;
+        margin-bottom: 45px;
+    }
+    .foot-heading button {
+        display: block;
+        margin: 0 auto 20px;
+        width: 260px;
+    }
+    .footer {
+        flex-direction: column;
+        text-align: center;
+        height: 480px;
+    }
+    .footer img {
+        align-self: center;
+    }
+    .footer .icons {
+        margin-top: 25px;
+    }
+}
