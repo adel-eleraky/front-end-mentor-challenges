@@ -1,0 +1,137 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: hsl(217, 54%, 11%);
+    font-family: 'Outfit', sans-serif;
+
+}
+
+.card {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 300px;
+    height: 500px;
+    padding: 15px;
+    background-color:  hsl(216, 50%, 16%);
+    border-radius: 10px;
+
+}
+
+.image {
+    width: 100%;
+    height: 60%;
+    background-image: url(images/image-equilibrium.jpg);
+    background-position: center;
+    background-size: cover;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    position: relative;
+}
+
+.image svg {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    display: none;
+}
+
+.image:hover svg {
+    display: block;
+}
+
+.image:hover {
+    background-image: linear-gradient(to bottom  , rgba(53,203,229,.5) , rgba(53,203,229,.5)),url(images/image-equilibrium.jpg);
+}
+
+.content {
+    width: 100%;
+    height: 36%;
+}
+
+.content h2 {
+    color: white;
+    font-size: 20px;
+    margin-bottom: 10px;
+
+}
+
+.content h2:hover {
+    color: #35cbe5;
+}
+
+.content p:first-of-type {
+    color: white;
+    opacity: .5;
+    font-size: 15px;
+    line-height: 1.4;
+    margin-bottom: 15px;
+}
+
+.content div {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+.content div span:first-of-type {
+    color: #35cbe5;
+    font-weight: bold;
+}
+
+.content div span:last-of-type {
+    color: white;
+    opacity: .5;
+    font-size: 15px;
+}
+
+svg {
+    margin-bottom: -4px;
+}
+
+hr {
+    background-color: #afa7a7b5;
+    border: none;
+    height: 1px;
+}
+
+.content p:last-of-type {
+    margin-top: 14px;
+}
+
+.content p:last-of-type img {
+    width: 30px;
+    height: 30px;
+    border: 1px solid white;
+    border-radius: 50%;
+    margin: 0 9px -8px 0;
+}
+
+.content p:last-child span:last-of-type {
+    color: white;
+    font-size: 15px;
+    margin-left: 4px;
+}
+
+.content p:last-child span:last-of-type:hover {
+    color: #35cbe5;
+}
+
+.content p:last-child span:first-of-type {
+    color: white;
+    opacity: .5;
+    font-size: 15px;
+}
+
+@media (max-width: 280px) {
+    .card {
+        width: 260px;
+    }
+    
+}
